@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "bindings": "~1.5.0",
-    "nan": "~2.14.0"
+    "nan": "~2.23.1"
   },
   "homepage": "https://github.com/mtojo/node-system-icon",
   "keywords": [
