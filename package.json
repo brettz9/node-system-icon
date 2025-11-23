@@ -30,6 +30,7 @@
   "scripts": {
     "install": "node-gyp rebuild",
     "rebuild": "node-gyp rebuild",
+    "electron-rebuild": "electron-rebuild -f",
     "test": "node test.js"
   },
   "os": [
