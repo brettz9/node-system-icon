@@ -1,16 +1,19 @@
 {
-  "name": "system-icon",
+  "name": "system-icon2",
   "description": "Get associated file/folder icon",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "author": "Masaki Tojo",
+  "contributors": [
+    "Brett Zamir"
+  ],
   "bugs": {
-    "url": "https://github.com/mtojo/node-system-icon/issues"
+    "url": "https://github.com/brettz9/node-system-icon/issues"
   },
   "dependencies": {
     "bindings": "~1.5.0",
     "nan": "~2.23.1"
   },
-  "homepage": "https://github.com/mtojo/node-system-icon",
+  "homepage": "https://github.com/brettz9/node-system-icon",
   "keywords": [
     "file",
     "icon",
@@ -22,7 +25,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mtojo/node-system-icon.git"
+    "url": "https://github.com/brettz9/node-system-icon.git"
   },
   "scripts": {
     "install": "node-gyp rebuild",

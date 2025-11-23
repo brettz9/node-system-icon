@@ -1,11 +1,11 @@
-# system-icon
+# system-icon2
 
 Get associated file/folder icon for Node.js.
 
 ## Installation
 
 ```bash
-$ npm install --save system-icon
+$ npm install --save system-icon2
 ```
 
 ## Supported platforms
@@ -22,7 +22,7 @@ const {writeFileSync} = require('fs');
 const {
   getIconForPath,
   ICON_SIZE_MEDIUM
-} = require('system-icon');
+} = require('system-icon2');
 
 getIconForPath("/path/to/file_or_folder", ICON_SIZE_MEDIUM, (err, result) => {
   if (err) {
@@ -40,7 +40,7 @@ const {writeFileSync} = require('fs');
 const {
   getIconForExtension,
   ICON_SIZE_MEDIUM
-} = require('system-icon');
+} = require('system-icon2');
 
 getIconForExtension(".ext", ICON_SIZE_MEDIUM, (err, result) => {
   if (err) {
