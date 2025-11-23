@@ -7,7 +7,7 @@ std::vector<unsigned char> ImageToPng(NSImage* image)
   auto imageRep = [[NSBitmapImageRep alloc] initWithCGImage:imageRef];
   [imageRep setSize:[image size]];
   auto imageData =
-    [imageRep representationUsingType:NSPNGFileType
+    [imageRep representationUsingType:NSBitmapImageFileTypePNG
                            properties:[[NSDictionary alloc] init]];
   auto p = static_cast<const unsigned char*>([imageData bytes]);
   return std::vector<unsigned char>{p, p + [imageData length]};

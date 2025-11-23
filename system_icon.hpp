@@ -42,12 +42,12 @@ protected:
           this->result.size())
           .ToLocalChecked(),
       };
-      callback->Call(2, argv);
+      Nan::Call(*callback, 2, argv);
     }
     else
     {
       v8::Local<v8::Value> argv[] = {Nan::Error("Failed to load icon")};
-      callback->Call(1, argv);
+      Nan::Call(*callback, 1, argv);
     }
   }
 

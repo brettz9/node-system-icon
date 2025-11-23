@@ -15,7 +15,7 @@
       'GCC_VERSION': 'com.apple.compilers.llvm.clang.1_0',
       'GCC_WARN_SHADOW': 'YES',
       'GCC_WARN_UNUSED_VARIABLE': 'YES',
-      'WARNING_CFLAGS': ['-Wall'],
+      'WARNING_CFLAGS': ['-Wall', '-Wno-cast-function-type-mismatch'],
     },
   },
   'targets': [
@@ -27,6 +27,13 @@
       'sources': [
         'addon.cpp',
       ],
+      'cflags!': [ '-fno-exceptions' ],
+      'cflags_cc!': [ '-fno-exceptions' ],
+      'cflags_cc': [ '-Wno-cast-function-type', '-Wno-cast-function-type-strict' ],
+      'xcode_settings': {
+        'GCC_ENABLE_CPP_EXCEPTIONS': 'YES',
+        'OTHER_CFLAGS': [ '-Wno-cast-function-type-mismatch' ],
+      },
       'conditions': [
         ['OS=="mac"', {
           'link_settings': {
