@@ -22,4 +22,14 @@ try {
 }
 
 await writeFile("icon.png", result);
+
+let result2;
+try {
+  result2 = await system.getIconForExtension(".xml", system.ICON_SIZE_MEDIUM);
+} catch (err) {
+  console.error(err);
+  return;
+}
+
+await writeFile("icon-ext.png", result2);
 })();

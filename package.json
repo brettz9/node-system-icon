@@ -1,7 +1,7 @@
 {
   "name": "system-icon2",
   "description": "Get associated file/folder icon",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "author": "Masaki Tojo",
   "contributors": [
     "Brett Zamir"
@@ -28,6 +28,7 @@
     "url": "https://github.com/brettz9/node-system-icon.git"
   },
   "scripts": {
+    "tsc": "tsc",
     "install": "node-gyp rebuild",
     "rebuild": "node-gyp rebuild",
     "electron-rebuild": "electron-rebuild -f",
@@ -36,5 +37,10 @@
   "os": [
     "darwin",
     "win32"
-  ]
+  ],
+  "devDependencies": {
+    "@types/bindings": "^1.5.5",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
 }

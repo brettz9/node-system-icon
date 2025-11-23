@@ -1,0 +1,6 @@
+.vscode
+.github
+.syntastic_cpp_config
+test.js
+icon.png
+icon-ext.png

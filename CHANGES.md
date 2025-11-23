@@ -1,5 +1,9 @@
 # CHANGES to system-icon2
 
+## 0.5.0
+
+- feat: typescript; promises for getIconForExtension
+
 ## 0.4.0
 
 - feat: add Promise API when no callback provided
