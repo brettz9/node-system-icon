@@ -1,5 +1,7 @@
 # system-icon2
 
+An updated fork of [system-icon](https://github.com/mtojo/node-system-icon).
+
 Get associated file/folder icon for Node.js.
 
 ## Installation
