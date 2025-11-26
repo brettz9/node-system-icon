@@ -1,7 +1,7 @@
 {
   "name": "system-icon2",
   "description": "Get associated file/folder icon",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "author": "Masaki Tojo",
   "contributors": [
     "Brett Zamir"

@@ -29,10 +29,10 @@
       ],
       'cflags!': [ '-fno-exceptions' ],
       'cflags_cc!': [ '-fno-exceptions' ],
-      'cflags_cc': [ '-Wno-cast-function-type', '-Wno-cast-function-type-strict' ],
+      'cflags_cc': [ '-Wno-cast-function-type', '-Wno-cast-function-type-strict', '-Wno-deprecated-declarations' ],
       'xcode_settings': {
         'GCC_ENABLE_CPP_EXCEPTIONS': 'YES',
-        'OTHER_CFLAGS': [ '-Wno-cast-function-type-mismatch' ],
+        'OTHER_CFLAGS': [ '-Wno-cast-function-type-mismatch', '-Wno-deprecated-declarations' ],
       },
       'conditions': [
         ['OS=="mac"', {

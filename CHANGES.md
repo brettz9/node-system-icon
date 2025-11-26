@@ -1,5 +1,9 @@
 # CHANGES to system-icon2
 
+## 0.5.1
+
+- fix: avoid deprecated APIs and suppress nan warnings
+
 ## 0.5.0
 
 - feat: typescript; promises for getIconForExtension
